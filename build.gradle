@@ -1,0 +1,20 @@
+group 'Telegram1'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'scala'
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.scala-lang:scala-library: 2.12"
+    compile "org.scalatest:scalatest_2.12:3.0.4"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+// https://mvnrepository.com/artifact/info.mukel/telegrambot4s
+    compile group: 'info.mukel', name: 'telegrambot4s_2.12', version: '3.0.14'
+}
